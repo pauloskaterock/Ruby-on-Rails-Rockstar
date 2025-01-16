@@ -1,0 +1,157 @@
+Curso de Implantação e DevOps para Ruby on Rails
+Módulo 1: Fundamentos de DevOps
+Objetivo: Compreender os conceitos e ferramentas fundamentais para trabalhar com DevOps, aplicados ao ambiente Ruby on Rails.
+
+1.1 O que é DevOps?
+
+Definição de DevOps e seu impacto no ciclo de vida de desenvolvimento de software.
+Cultura DevOps: colaboração entre equipes de desenvolvimento e operações.
+Benefícios do DevOps para equipes Ruby on Rails.
+1.2 Componentes de DevOps
+
+Versionamento de código (Git).
+Automação de builds e testes (CI/CD).
+Monitoramento e logging.
+Infraestrutura como código.
+1.3 Ferramentas Usadas em DevOps
+
+Git, GitHub, GitLab.
+Jenkins, CircleCI, GitHub Actions.
+Terraform, Ansible.
+Docker, Kubernetes.
+Módulo 2: Fundamentos de Docker e Containers
+Objetivo: Entender como criar e gerenciar containers para aplicações Ruby on Rails.
+
+2.1 Introdução ao Docker
+
+O que são containers? Diferença entre máquinas virtuais e containers.
+Instalando o Docker.
+Comandos básicos do Docker: docker build, docker run, docker ps.
+Trabalhando com Dockerfiles e volumes.
+2.2 Criando Containers para Ruby on Rails
+
+Criando um Dockerfile para uma aplicação Rails.
+Usando imagens baseadas no Ruby.
+Como configurar um banco de dados no container (exemplo: PostgreSQL).
+Gerenciando variáveis de ambiente.
+2.3 Docker Compose
+
+O que é o Docker Compose?
+Criando um docker-compose.yml para orquestrar containers.
+Exemplo prático: aplicação Rails com banco de dados PostgreSQL e Redis.
+Recurso para Estudo:
+
+Docker - Getting Started
+Módulo 3: Configuração de CI/CD
+Objetivo: Aprender a configurar integração e entrega contínua para Ruby on Rails.
+
+3.1 O que é CI/CD?
+
+Definições de integração contínua (CI) e entrega contínua (CD).
+Por que CI/CD é importante para aplicações Rails?
+Ferramentas populares de CI/CD: Jenkins, CircleCI, GitHub Actions.
+3.2 Configuração de Pipelines de CI/CD
+
+Criando um pipeline básico no GitHub Actions.
+Automação de testes (RSpec, Capybara) e builds.
+Automatizando a entrega de uma aplicação Rails para produção.
+3.3 Testes e Quality Gates
+
+Integrando testes automatizados (unitários, integração, etc.) no pipeline.
+Análise de qualidade de código com Rubocop.
+Recurso para Estudo:
+
+GitHub Actions for Ruby on Rails
+Módulo 4: Infraestrutura como Código com Terraform
+Objetivo: Aprender a usar ferramentas para provisionamento e gestão de infraestrutura com Ruby on Rails.
+
+4.1 Introdução ao Terraform
+
+O que é Infraestrutura como Código (IaC)?
+Instalando o Terraform.
+Conceitos principais: providers, recursos, e estados.
+4.2 Criando Infraestrutura para Rails
+
+Criando recursos em AWS usando Terraform.
+Criando instâncias EC2 para rodar a aplicação Rails.
+Criando buckets S3 para armazenamento de arquivos estáticos.
+4.3 Integrando com Outros Serviços
+
+Provisionando bancos de dados RDS para PostgreSQL.
+Configurando load balancers e escalabilidade horizontal.
+Recurso para Estudo:
+
+Terraform Documentation
+Módulo 5: Implantação em Produção com AWS
+Objetivo: Implantar uma aplicação Ruby on Rails em produção utilizando AWS.
+
+5.1 Introdução ao AWS para Rails
+
+Por que AWS é uma escolha popular para deploy de Rails?
+Principais serviços da AWS usados em Rails: EC2, RDS, S3, Elastic Beanstalk.
+5.2 Configuração de EC2
+
+Criando instâncias EC2 e configurando ambiente para Ruby on Rails.
+Usando SSH para acessar e configurar o servidor.
+Implantação manual e automatizada da aplicação Rails.
+5.3 Escalabilidade e Alta Disponibilidade
+
+Configurando balanceadores de carga (Elastic Load Balancer).
+Escalando a aplicação horizontalmente com EC2 Auto Scaling.
+Integrando com RDS para gerenciamento de banco de dados.
+5.4 Segurança e Certificados SSL
+
+Usando AWS IAM para controle de acesso.
+Instalando e configurando SSL para comunicação segura.
+Configurando o CloudFront para distribuição de conteúdo.
+Recurso para Estudo:
+
+AWS for Ruby on Rails Tutorial
+Módulo 6: Monitoramento e Logging
+Objetivo: Implementar práticas de monitoramento e logging para garantir a saúde das aplicações Ruby on Rails.
+
+6.1 Monitoramento com AWS CloudWatch
+
+Como usar o CloudWatch para monitorar a performance da aplicação.
+Criando alarmes e logs para detectar falhas.
+6.2 Ferramentas de Logging
+
+Configurando o Rails para enviar logs para um sistema centralizado.
+Usando Loggly, Papertrail, ou ELK stack (Elasticsearch, Logstash, Kibana).
+6.3 Monitoramento de Performance
+
+Integrando New Relic ou Datadog para monitoramento em tempo real.
+Recurso para Estudo:
+
+Monitoramento com New Relic
+Módulo 7: Kubernetes para Escalabilidade
+Objetivo: Usar Kubernetes para orquestrar containers e garantir escalabilidade e resiliência.
+
+7.1 O que é Kubernetes?
+
+Como o Kubernetes facilita a escalabilidade de aplicações em containers.
+Componentes principais: pods, deployments, serviços.
+7.2 Configurando Kubernetes para Rails
+
+Criando um cluster Kubernetes na AWS ou Google Cloud.
+Implantando sua aplicação Rails no Kubernetes.
+Configurando volumes persistentes e rede entre containers.
+7.3 Escalabilidade e Gestão de Carga
+
+Escalando a aplicação Rails automaticamente com Kubernetes.
+Gerenciando atualizações e rollback de versões.
+Recurso para Estudo:
+
+Kubernetes Documentation
+Conclusão
+Ao final deste curso, você terá uma compreensão completa de como configurar, implantar e monitorar aplicações Ruby on Rails em ambientes de produção com DevOps e práticas modernas de infraestrutura. Com isso, você estará pronto para implementar uma solução robusta, escalável e de alta disponibilidade.
+
+Próximos Passos
+Após concluir o curso, recomendo praticar em projetos reais, contribuir com projetos open source e participar de hackathons para consolidar seu aprendizado.
+
+
+
+
+
+
+
