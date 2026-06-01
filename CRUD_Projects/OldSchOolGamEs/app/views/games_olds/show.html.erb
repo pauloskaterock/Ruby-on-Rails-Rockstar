@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @games_old %>
+
+<div>
+  <%= link_to "Edit this games old", edit_games_old_path(@games_old) %> |
+  <%= link_to "Back to games olds", games_olds_path %>
+
+  <%= button_to "Destroy this games old", @games_old, method: :delete %>
+</div>

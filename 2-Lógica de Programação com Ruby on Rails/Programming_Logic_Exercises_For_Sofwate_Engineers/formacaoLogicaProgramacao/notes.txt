@@ -1,0 +1,17 @@
+input = sao momentos de interação com o usuario
+process = sao verificacoes e acoes para realzar o pedido do usuario
+output = sao comandos de saida para retornar coisa ou dar algum posisionamento ou mensagem para o usuario
+
+
+exemplo 
+comandos de entrada: 
+procura um pedido:
+solicita um pedido:
+-----------------------------------
+comandos de processamento:
+verifica se o pagamento foi aprovado
+verifica se o restaurante esta aberto
+começa a preparar o seu pedido
+------------------------------------
+comandos de saida
+seu pedido esta sendo levado até voce

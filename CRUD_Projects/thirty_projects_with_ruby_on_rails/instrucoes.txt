@@ -1,0 +1,74 @@
+Passo 1: Criar um novo aplicativo Rails
+
+Abra o terminal e execute os seguintes comandos:
+
+bash
+
+
+rails new task_manager
+cd task_manager
+
+Passo 2: Criar o modelo e o controlador para Tarefas
+Agora, crie um modelo chamado Task e um controlador chamado Tasks:
+
+bash
+
+
+rails generate model Task title:string description:text
+rails generate controller Tasks index create
+
+Isso criará um modelo Task com atributos title e description, e um controlador Tasks com ações para exibir a lista de tarefas (index) e criar novas tarefas (create).
+
+Passo 3: Migrar o banco de dados
+Migre o banco de dados para criar a tabela de tarefas:
+
+bash
+
+
+rails db:migrate
+
+Passo 4: Definir Rotas
+Abra o arquivo config/routes.rb e adicione as seguintes linhas:
+
+ruby
+
+
+Rails.application.routes.draw do
+  resources :tasks, only: [:index, :create]
+  root 'tasks#index'
+end
+
+Passo 5: Criar o Layout e as Visualizações
+Crie as visualizações para listar tarefas e adicionar novas tarefas. Abra os arquivos app/views/tasks/index.html.erb e app/views/tasks/_form.html.erb, e adicione o seguinte código:
+
+app/views/tasks/index.html.erb:
+
+
+
+Passo 6: Atualizar o Controlador
+Atualize o arquivo app/controllers/tasks_controller.rb com o seguinte código:
+
+O codigo se encontra em: tasks_controller.rb
+
+
+
+Passo 7: Adicionar JavaScript para Atualização Sem Recarregar
+
+Crie o arquivo app/views/tasks/create.js.erb e adicione o seguinte código:
+
+O codigo se encontra em: create.js.erb
+javascript
+
+
+Este código JavaScript atualizará a lista de tarefas sem recarregar a página e limpará 
+o formulário após a criação de uma nova tarefa.
+
+Passo 8: Executar o Aplicativo
+No terminal, execute o seguinte comando para iniciar o servidor Rails:
+
+bash
+
+rails server
+Abra um navegador e vá para http://localhost:3000. 
+Você verá a interface do aplicativo de lista de tarefas. 
+Adicione algumas tarefas para ver como funciona.

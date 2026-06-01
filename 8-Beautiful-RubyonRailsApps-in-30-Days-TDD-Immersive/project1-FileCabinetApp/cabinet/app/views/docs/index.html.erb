@@ -1,0 +1,19 @@
+<div class="wrapper_with_padding">
+  <div id="docs" class="clearfix">
+    <% unless @docs.blank? %>
+      <% @docs.each do |doc| %>
+        <%= link_to url_for(doc) do %>
+          <div class="doc">
+            <p class="title"><%= doc.title %></p>
+            <p class="date"><%= time_ago_in_words(doc.created_at) %></p>
+            <p class="content"><%= truncate(doc.context, length: 50) %></p>
+          </div>
+        <% end %>
+      <% end %>
+    <% else %>
+      <h2>Create Doc</h2>
+      <p>Start Creating Documents and Organizing your life!</p>
+      <%= button_to "Create Doc", new_doc_path, method: :get, class: "button" %>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+https://exercism.org
+
+https://edabit.com
+
+https://www.beecrowd.com.br
+
+
+
+booleans
+numbers
+strings
+variaveis
+

@@ -1,0 +1,6 @@
+rails generate scaffold games_old name:string description:text picture:string
+
+root to: redirect("/games_olds")
+
+
+stoped => https://guides.railsgirls.com/html-and-css

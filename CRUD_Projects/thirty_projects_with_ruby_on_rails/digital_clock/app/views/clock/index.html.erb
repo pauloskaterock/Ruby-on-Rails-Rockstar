@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Clock Created By PH</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: black; /* Define o fundo da tela como preto */
+      color: limegreen; /* Define a cor do texto como verde */
+    }
+
+    h1 {
+      font-size: 7em;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="digital-clock">00:00:00</h1>
+  <script>
+    // JavaScript para atualizar o relógio digital
+    function updateClock() {
+      var now = new Date();
+      var hours = now.getHours().toString().padStart(2, '0');
+      var minutes = now.getMinutes().toString().padStart(2, '0');
+      var seconds = now.getSeconds().toString().padStart(2, '0');
+      var timeString = hours + ':' + minutes + ':' + seconds;
+      document.getElementById('digital-clock').innerText = timeString;
+    }
+
+    // Atualize o relógio a cada segundo
+    setInterval(updateClock, 1000);
+
+    // Chame a função para exibir a hora inicial
+    updateClock();
+  </script>
+</body>
+</html>

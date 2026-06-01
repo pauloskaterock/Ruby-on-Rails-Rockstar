@@ -1,0 +1,56 @@
+rails new publicinternet --database=postgresql (criação do projeto)
+
+git remote add origin https://github.com/pauloskaterock/SpeedTestPublicPlaces.git(iniciando REPO git)
+--------------------------------------------
+
+Jira CARD(shetch other rough for a few web page)
+
+*user storie
+1-sendo um usuário do speedTest devo ser capaz de saber quais cafés tem internet para que eu posso escolher o local para trabalhar
+2- usuário pode decidir por avaliasoes do wi-fi
+3-usuario pde conectar em cafés recorrecorentes
+
+mudei o arquivo routes.rb adicionando root places#index (para fazer a pagina inicial)
+
+criei o arquivo publicinternet/app/controllers/places_controller.rb com o codigo abaixo
+
+class PlacesController < AplicationController
+  def index
+    render "places/index"
+  end
+ 
+end
+
+criei a pasta  publicinternet/app/views/layouts/pages/places/
+com o arquivo
+index.html.erb
+
+--- DATABASE MODELLING - Jira CARD
+
+rails g migration AddPlacesTable  (criando a primeira tabela(cardJira) )
+ mudei o metodo do publicinternet/db/migrate/20250423174655_add_places_table.rb
+
+git checkout -b add-initial-tables
+
+git checkout -b no Git é usado para criar e alternar para uma nova ramificação (branch) simultaneamente. É uma maneira prática de realizar duas ações em um único comando: criar uma nova branch e mudar para ela.
+
+rails db:migrate (cria a migração do banco de dados)
+
+criado o arquivo places.rb(publicinternet/app/models/place.rb) * feito codigo
+
+acesso: rails console
+rails console>
+> Place.count
+
+assim foi implementado a tabela place
+
+para gerarmos a tabela de velocidade speed:
+rails g migration  AddInternetSpeedsTable
+-passamos o mesmo padrao 
+
+mudei o publicinternet/db/migrate/20250423174655_add_places_table.rb metodo change
+
+
+
+
+  # parei no 44:00
