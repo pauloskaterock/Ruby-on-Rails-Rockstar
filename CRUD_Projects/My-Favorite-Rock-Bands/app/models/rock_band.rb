@@ -1,0 +1,2 @@
+class RockBand < ApplicationRecord
+end

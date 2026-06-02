@@ -1,0 +1,2 @@
+module RockBandsHelper
+end
