@@ -1,0 +1,22 @@
+TESTAR VISUALMENTE (PASSO A PASSO)
+1. Testar Autenticação
+Acesse http://localhost:3001/login
+
+Insira credenciais de teste
+
+Verifique no Chrome DevTools > Application > LocalStorage:
+
+Deve aparecer um token JWT
+
+2. Testar API no Navegador
+Rotas GET para testar diretamente:
+
+http://localhost:3000/api/v1/places
+
+http://localhost:3000/api/v1/places/1
+
+3. Ferramentas Recomendadas
+Ferramenta	Uso
+Postman	Testar POST/PUT/DELETE
+React DevTools	Debugar estado dos componentes
+Redux DevTools	Monitorar estado global

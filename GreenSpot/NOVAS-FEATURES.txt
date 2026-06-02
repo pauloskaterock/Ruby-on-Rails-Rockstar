@@ -1,0 +1,18 @@
+A página inicial do  oferece diversas funcionalidades para facilitar a navegação e a experiência do usuário. Aqui estão algumas delas:
+
+Barra de busca: Permite pesquisar gren spots ou experiências com base em localização, datas .
+
+Filtros de pesquisa: Inclui opções como tipo de green spot, faixa de preço, comodidades, entre outros.
+
+Sugestões de destinos populares: Apresenta locais recomendados para inspirar os usuários.
+
+Exploração de experiências: Mostra atividades e experiências únicas que podem ser reservadas, como passeios guiados ou workshops.
+
+Login e cadastro: Botões para acessar ou criar uma conta .
+ou locais com avaliações altas.
+
+Links para recursos adicionais: Inclui informações sobre como comprar green spot e suporte ao cliente.
+
+
+
+mudar os nomes para Store from amsterda
